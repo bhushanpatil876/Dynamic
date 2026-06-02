@@ -13,10 +13,10 @@ model = ChatGroq(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
-st.header('Reasearch Tool')
+st.header('Research Tool')
 
-paper_input = st.selectbox( "Select Reasearch Paper Name", ["Attention Is All You Need",
- "BERT: Pre-training of Deep Bidirecional Transformers", "GPT-3: Language MOdels are "
+paper_input = st.selectbox( "Select Research Paper Name", ["Attention Is All You Need",
+ "BERT: Pre-training of Deep Bidirectional Transformers", "GPT-3: Language Models are "
  "Few-Shot Learners", "Diffusion Models Beat GANs on Image Synthesis"])
 
 style_input = st.selectbox( "Select Explanation Style", ["Beginner-Friendly", "Technical", 
